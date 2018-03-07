@@ -1,0 +1,190 @@
+body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-size:cover;
+	background-color:#47433f;
+}
+.container{
+
+}
+.header-section{
+	background-color:#1b1c1b;
+	width:100%;
+	float: left;
+	position:relative;
+
+
+}
+
+
+.inner-div{
+	margin:auto;
+	width:60%;
+}
+.navigation li,a,div{
+	display:inline-block;
+	float:left;
+}
+
+#logo-id img{
+	width:40%;
+	height:3.5rem;
+	padding-left:50%;
+	padding-top:10px;
+}
+
+.inner-nav-div img{
+	width:40%;
+}
+.navigation li{
+	float:left;
+	margin-left:18px;
+
+}
+.li1{
+	padding-top:10px;
+	padding-left:20px;
+
+}	
+.li1 a{
+	color:#FFF;
+	text-decoration: none;
+
+}
+.li1 a:hover{
+	color:#dd7813;
+	text-decoration: underline;
+}
+
+.li1 a:selected{
+	text-decoration: none;
+
+}
+
+.navigation{
+	text-transform: uppercase;
+	margin-right:30px;
+	font-size:16px;
+}
+
+.inner-nav-div{
+	margin-left:26rem;
+	float:right;
+	margin-top:-23px;
+}
+
+.inner-nav-div li a{
+	float:right;
+	font-size:12px;
+	transition:border 0.2s ease;
+    color:#8b939b;
+    font-weight:bold;
+    border-bottom:2px solid transparent;
+    text-decoration: none;
+    
+}
+.inner-nav-div li a:hover{
+	text-decoration:none;
+    border-bottom-color:#8b939b
+}
+
+.ul1 {
+	display:inline-block;
+	margin-bottom:10px;
+}
+.ul1 li{
+
+}
+.naslov{
+	width:960px;
+}
+.h2-red-heading{
+	font-size:2em;
+    text-align:center;
+    color:#e0e0e2;
+}
+
+#specijalni-red{
+	margin-top:35px;
+}
+
+.red{
+	width: 75%;
+	position:relative;
+	left: 50%;
+	margin-left: -37.5%;
+	
+}
+.div-txt{
+
+	width: 75%;
+	position: relative;
+	left: 50%;
+	margin-left: -37.5%;
+}
+.main div{
+	display:block;
+}
+.txt{
+	margin-left:-10%;
+	text-align:center;
+    margin-top:15px;
+    margin-bottom:55px;
+    font-size:16px;
+    font-family:Hevletica,sans-serif;
+    color:#d7dae0;
+}
+
+.slike{
+	margin-left:-10%;
+	text-align:center;
+    margin-top:-15px;
+    margin-bottom:55px;
+    width:110%;
+    height:500px;
+}
+.ul2{
+	display:inline-block;
+	margin-top:-35px;
+}
+    
+}
+.clear{
+    clear:both;
+}
+#foot{
+	width:100%;
+	float:center;
+
+
+}
+.container-footer{
+	float:left;
+	width:80%;
+	margin:auto;
+	border-top:1.5px solid rgba(255,255,255,0.6);
+
+}
+.container-footer img{
+	width:28px;
+}
+.slicice li{
+	display:inline-block;
+	padding-left:20px;
+	position:relative;
+}
+.slicice{
+	margin-left:-7%;
+}
+
+.slicice a:hover{
+	border-bottom: 2px solid #dee7f4;
+}
+
+#spec-li{
+	float:right;
+	text-align:center;
+}
+
+
