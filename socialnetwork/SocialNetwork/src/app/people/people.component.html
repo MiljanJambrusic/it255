@@ -1,19 +1,78 @@
-<div class="col-lg-4 col-md-4 col-sm-4">
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">No.</th>
-        <th scope="col">First name</th>
-        <th scope="col">Last name</th>
+<div class="row">
+  <div class="col-lg-4 col-md-4 col-sm-4">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">No.</th>
+          <th scope="col">First name</th>
+          <th scope="col">Last name</th>
 
-      </tr>
-    </thead>
-    <tbody class="tb">
-      <tr *ngFor="let person of singles;let i =index">
-        <td>{{i+1}}</td>
-        <td>{{person.list_firstName}}</td>
-        <td>{{person.list_surname}}</td>
-      </tr>
-    </tbody>
-  </table>
+        </tr>
+      </thead>
+      <tbody class="tb">
+        <tr class="tablerow" *ngFor="let person of singles;let i =index" (click)="pickedPerson(person)">
+          <td>{{i+1}}</td>
+          <td>{{person.list_firstName}}</td>
+          <td>{{person.list_surname}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-lg-2 col-md-2 col-sm-2"></div>
+  <div class="col-lg-4 col-md-4 col-sm-4">
+    <section class="page-title text-center">
+      <h1>Picked person</h1>
+    </section>
+    <div class="row">
+      <label class="mt-3">First name: &nbsp;
+      </label>
+      <label ([ngModel])="firstname" class="mt-3">
+        {{firstname}}
+      </label>
+    </div>
+    <div class="row">
+      <label class="mt-3">Surname: &nbsp;
+      </label>
+      <label ([ngModel])="lastname" class="mt-3">
+        {{lastname}}
+      </label>
+    </div>
+    <div class="row">
+      <label class="mt-3">Age: &nbsp;
+      </label>
+      <label ([ngModel])="personage" class="mt-3">
+        {{personage}}
+      </label>
+    </div>
+    <div class="row">
+      <label class="mt-3">Gender: &nbsp;
+      </label>
+      <label ([ngModel])="persongender" class="mt-3">
+        {{persongender}}
+      </label>
+    </div>
+    <div class="row mt-3">
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <section class="page-title text-center">
+          <h5>Direct friends</h5>
+        </section>
+        <ol>
+          <li *ngFor="let personn of directFriends">{{personn.list_firstName}}&nbsp;{{personn.list_surname}}</li>
+        </ol>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <section class="page-title text-center">
+          <h5>Friends of friends</h5>
+        </section>
+        <ol>
+          <li *ngFor="let friendsoffriends of friendsofFriends">{{friendsoffriends.list_firstName}}&nbsp;{{friendsoffriends.list_surname}}</li>
+        </ol>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <section class="page-title text-center">
+          <h5>Suggested friends</h5>
+        </section>
+      </div>
+    </div>
+  </div>
 </div>
